@@ -1,5 +1,9 @@
+// Importerer recipe.module.css for design.
+// Denne bygger opp oppskriftene.
+
 import React from 'react'; 
 import style from './recipe.module.css';
+
 
 const Recipe = ({title, calories, image, ingredients }) => {
     return (
