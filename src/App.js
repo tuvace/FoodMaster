@@ -10,7 +10,7 @@ const APP_KEY = "db82dcfff5cf65ae1c02067635f6c40a";
 
 const [recipes, setRecipes] = useState([]);
 const [search, setSearch] = useState(" ");
-const [query, setQuery] = useState("chicken");
+const [query, setQuery] = useState("pesto");
 
 useEffect(() => {
   getRecipes();
@@ -18,9 +18,11 @@ useEffect(() => {
 
 //Henter APIen med den egendefinerte nøkkelen og IDen.
 const getRecipes = async () => {
+  
   const response = await fetch(
     `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
   );
+
   const data = await response.json();
   setRecipes(data.hits);
   console.log(data.hits);
@@ -36,13 +38,31 @@ const getSearch = e => {
   setSearch('');
 }
 
+
+
 //Lage søkefelt med søkemotor.
 //I den andre delen prøver vi å lage to knapper, en for å komme til kalender og en for å komme til innlogging.
 //Disse knappene fungerer ikke optimalt enda. Den prøver å omdirigere oss til ny side, men viser fortsatt bare forsiden.
 //Tredje delen henter ut oppskrifter fra Recipe.js
   return( 
+
+    
     <div className="App">
+
+    <div class="btn-group">
+    <form action="calendar.js" >
+  <button class="btn1"> Calendar</button>
+  </form>
+  <form action="index.js">
+  <button class="btn"> HOME</button>
+  </form>
+  <form action="src/lib/indexx.js">
+  <button class="btn2"> Login</button>
+  </form>
+</div>
+
     <form onSubmit={getSearch} className="search-form">
+
       <input 
       className="search-bar" 
       type="text" 
@@ -53,19 +73,14 @@ const getSearch = e => {
       Search
       </button>
     </form>
-  
 
-    <div> 
-    <form action="/calendar.js" >
-        <button type="onclick"> onclick</button>
-          <button onclick="window.location='/calendar.js'">Kalender</button>
-          </form>
-    
-          <form action="/indexx.js">
-          <button type="onclick"> Login</button>
-          </form>
-          </div>
 
+<div class="header"> 
+<h1>
+  Food Master
+</h1>
+<p>An Open Source Project</p>
+</div>
     
     {recipes.map(recipe => (
       <Recipe 
@@ -74,6 +89,7 @@ const getSearch = e => {
       calories={recipe.recipe.calories} 
       image={recipe.recipe.image}
       ingredients={recipe.recipe.ingredients}
+    
       />
       
     ))}
