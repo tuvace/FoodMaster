@@ -8,9 +8,9 @@ To run this project you need to install a few things first:
 
 1. First you need to install Node.js
 2. Secondly, you need to install a React project with the command: 
-npx create-react-app my-app
-cd my-app
-npm start
+### `npx create-react-app my-app`
+### `cd my-app`
+### `npm start`
 3. Thrid, you need to install express with the command:
 npm install express --save
 
