@@ -1,4 +1,28 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The API used in this project is the Recipe Search from Edamam.
+
+
+# Installs
+
+To run this project you need to install a few things first:
+
+1. First you need to install Node.js
+2. Secondly, you need to install a React project with the command: 
+npx create-react-app my-app
+cd my-app
+npm start
+3. Thrid, you need to install express with the command:
+npm install express --save
+
+When working with React, sometimes later on in the prosject you need to install some more things. Especially when you are importing from other Open Source projects. This is simply done with a command in the Terminal.
+
+# The API
+
+To run the Edamam API you need an account on their website at the right API: https://developer.edamam.com/edamam-recipe-api.
+Use the free one (it is enough for this project), and create a new application for the Recipe Search API.
+Find your Application Key and Application ID and change the already existing ones in the project with your new ones.
+
+
 
 ## Available Scripts
 
