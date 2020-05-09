@@ -9,12 +9,24 @@ const Recipe = ({title, calories, image, ingredients }) => {
         <div className={style.recipe}>
             <h1>{title}</h1>
             <o1>
-                Ingredients: {ingredients.map(ingredient => (
+                <div class="title"> 
+                    <h1>
+                    Ingredients:
+                    </h1>
+                </div>
+                {ingredients.map(ingredient => (
                     <li>{ingredient.text}</li>
                 ))}
             </o1>
             
-            <p>Calories: {calories.toPrecision(6)}</p>
+            <div class="title2"> 
+                    <h1>
+                    Calories:
+                    <p>{calories.toPrecision(6)}</p>
+                    </h1>
+                </div>
+
+        
            
             <img className={style.image} src={image} alt=""/>
         </div>
