@@ -23,9 +23,11 @@ To run this project you need to install a few things first:
 ### `npm start`
 3. Thrid, you need to install express with the command:
 npm install express --save
-4. For the use of the login, you need to install the open source project Passport.
+4. For the use of the login, you need to install the open source project Passport https://github.com/jaredhanson/passport
 ### `npm install passport`
-5. For the use of the calendar, you need to install the open source project ...
+5. For the use of the calendar, you need to install the open source project React-Calendar https://www.npmjs.com/package/react-calendar
+### `npm install react-calendar`
+
 
 When working with React, sometimes later on in the prosject you need to install some more things. Especially when you are importing from other Open Source projects. This is simply done with a command in the Terminal.
 
