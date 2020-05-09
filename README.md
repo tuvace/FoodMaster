@@ -1,6 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The API used in this project is the Recipe Search from Edamam.
 
+# The Project
+
+This project allow you to search for ingredients and gathers all recipes with a matching ingredient. 
+
+https://user-images.githubusercontent.com/46562790/81477046-be20a380-9215-11ea-82e6-22381247b3ed.png
+
+# Our Goal
+
+Our goal with this project is to make a website which will help with meal planning. The site is supposed to have a login button where you can log into your account. From here you will be able to add meals to a calendar, to plan when and what you are going to eat. We wish for this website to be a helping tool in peoples everyday life.
+
 
 # Installs
 
@@ -13,6 +23,9 @@ To run this project you need to install a few things first:
 ### `npm start`
 3. Thrid, you need to install express with the command:
 npm install express --save
+4. For the use of the login, you need to install the open source project Passport.
+### `npm install passport`
+5. For the use of the calendar, you need to install the open source project ...
 
 When working with React, sometimes later on in the prosject you need to install some more things. Especially when you are importing from other Open Source projects. This is simply done with a command in the Terminal.
 
