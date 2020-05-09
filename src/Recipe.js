@@ -1,5 +1,5 @@
-// Importerer recipe.module.css for design.
-// Denne bygger opp oppskriftene.
+// Imports the recipe.module.css for the design.
+// This builds the structure for the recipies.
 
 import React,{useState} from 'react'; 
 import style from './recipe.module.css';

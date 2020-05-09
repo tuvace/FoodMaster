@@ -3,7 +3,7 @@ import Recipe from './Recipe';
 import './App.css';
 
 
-//Egendefinert API key og API ID
+//Customized API key and API ID
 const App = () => {
 const APP_ID = "0317b504";
 const APP_KEY = "db82dcfff5cf65ae1c02067635f6c40a";
@@ -13,12 +13,15 @@ const [search, setSearch] = useState(" ");
 const [query, setQuery] = useState("pesto");
 
 useEffect(() => {
-  getRecipes();
-}, [query]);
+  getRecipes(); //Gets recipes
+}, [query]); //When having query here, the site will only update after hitting the submit button (search). 
+//This is the only time the query is changing/updating.
+//There will only appear recipes from the chosen query.
 
-//Henter APIen med den egendefinerte nøkkelen og IDen.
+
 const getRecipes = async () => {
   
+  //Fetches the API with your own customized ID and key
   const response = await fetch(
     `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
   );
@@ -33,37 +36,44 @@ const updateSearch = e => {
 }
 
 const getSearch = e => {
-  e.preventDefault();
-  setQuery(search);
-  setSearch('');
+  e.preventDefault(); //Stops page refresh.
+  setQuery(search); 
+  setSearch(''); //Resets the search bar to empty strings.
 }
 
 
 
-//Lage søkefelt med søkemotor.
-//I den andre delen prøver vi å lage to knapper, en for å komme til kalender og en for å komme til innlogging.
-//Disse knappene fungerer ikke optimalt enda. Den prøver å omdirigere oss til ny side, men viser fortsatt bare forsiden.
-//Tredje delen henter ut oppskrifter fra Recipe.js
+//In the first part, it is made a button group.
+//One button for the calendar, home and login. They do not work optimally. 
+//They are trying to redirect to a new site, but it still only shows the front page (index.js).
+
+//The second part is the search bar.
+
+//Thirdly, it is the header on our front page.
+
+//Lastly, there is a part getting the recipes.
+
   return( 
 
-    
     <div className="App">
 
-    <div class="btn-group">
-    <form action="calendar.js" >
-  <button class="btn1"> Calendar</button>
-  </form>
-  <form action="index.js">
-  <button class="btn"> HOME</button>
-  </form>
-  <form action="src/lib/indexx.js">
-  <button class="btn2"> Login</button>
-  </form>
+<div class="btn-group"> 
+<form action="calendar.js" >
+<button class="btn1"> Calendar</button>
+</form>
+
+<form action="index.js">
+<button class="btn"> HOME</button>
+</form>
+
+<form action="indexx.js">
+<button class="btn2" onclick="window.location.href='indexx.js'">Login</button>
+</form>
 </div>
 
 
 
-    <form onSubmit={getSearch} className="search-form">
+    <form onSubmit={getSearch} className="search-form"> 
 
       <input 
       className="search-bar" 
@@ -71,20 +81,21 @@ const getSearch = e => {
       value={search} 
       onChange={updateSearch} 
       />
-      <button className="search-button" type="submit">
+      <button className="search-button" type="submit"> 
       Search
       </button>
     </form>
 
 
-<div class="header"> 
-<h1>
-  Food Master
+<div class="header">
+<h1> 
+  Food Master 
 </h1>
 <p>An Open Source Project</p>
 </div>
+
     
-    {recipes.map(recipe => (
+    {recipes.map(recipe => ( //This gets the recipes with their title, ingredients, calories and image.
       <Recipe 
       key={recipe.recipe.label}
       title={recipe.recipe.label} 
@@ -100,7 +111,7 @@ const getSearch = e => {
     
   );
   };
-  
+ 
   
     
 export default App;

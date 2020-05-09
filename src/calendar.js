@@ -1,6 +1,6 @@
-// From Open Source project https://www.npmjs.com/package/react-calendar
-// En standard kalender for React
-// Den blir lastet ned med en npm kommando, for så å importere den inn her.
+// From the Open Source project https://www.npmjs.com/package/react-calendar
+// A standard calendar for React
+// It is downloaded by a npm command, and then imported here.
 
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';

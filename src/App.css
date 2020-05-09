@@ -50,13 +50,13 @@
 
 
 .btn:hover{
-  background-color: white;
+  background-color: #ff9a9e;
 }
 .btn1:hover{
-  background-color: white;
+  background-color: #ff9a9e;
 }
 .btn2:hover{
-  background-color: white;
+  background-color: #ff9a9e;
 }
 
 
@@ -82,3 +82,4 @@ padding: 10px;
   padding: 10px 20px;
   color: white;
 }
+

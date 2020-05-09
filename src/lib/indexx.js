@@ -1,5 +1,7 @@
 // From Open Source project Passport.
 
+import './login.css';
+
 /**
  * Module dependencies.
  */
@@ -26,3 +28,5 @@ exports.Strategy = require('passport-strategy');
  */
 exports.strategies = {};
 exports.strategies.SessionStrategy = SessionStrategy;
+
+export default indexx;

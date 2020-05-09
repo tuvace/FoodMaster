@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// Alt fra App og index.css blir hentet inn her.
+// Everything from App and index.css is imported in here.
 
 ReactDOM.render(
   <React.StrictMode>
