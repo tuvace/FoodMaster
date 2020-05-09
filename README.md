@@ -5,7 +5,7 @@ The API used in this project is the Recipe Search from Edamam.
 
 This project allow you to search for ingredients and gathers all recipes with a matching ingredient. 
 
-
+https://user-images.githubusercontent.com/46562790/81477046-be20a380-9215-11ea-82e6-22381247b3ed.png
 
 # Our Goal
 
