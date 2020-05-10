@@ -8,7 +8,8 @@ This project allow you to search for ingredients and gathers all recipes with a 
 
 <img width="1440" alt="Skjermbilde 2020-05-09 kl  16 47 59" src="https://user-images.githubusercontent.com/46562790/81477046-be20a380-9215-11ea-82e6-22381247b3ed.png">
 
-<img width="1437" alt="Skjermbilde 2020-05-10 kl  12 05 48" src="https://user-images.githubusercontent.com/46562790/81496248-a9e0b300-92b6-11ea-945b-cdf59568e54b.png">
+<img width="1440" alt="Skjermbilde 2020-05-10 kl  12 14 50" src="https://user-images.githubusercontent.com/46562790/81496485-422b6780-92b8-11ea-930d-e433eac06124.png">
+
 
 # Our Goal
 
